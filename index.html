@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours & Travels</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: #f7c843;
+            color: #333;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            margin-left: 20px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+        
+        nav ul li {
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+        }
+        
+        .hero {
+            background: url("tours and travels photo.png") no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            margin-top: 20px;
+        }
+        
+        .services {
+            background-color: #333;
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .service {
+            margin-bottom: 40px;
+        }
+        
+        .service img {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+        
+        .testimonials {
+            background-color: #f7c843;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .testimonial-slider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .testimonial {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .testimonial p {
+            font-style: italic;
+        }
+        
+        .testimonial cite {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .blog {
+            background-color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .blog .post {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog .post img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        .blog .post h3 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .blog .post p {
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Tours & Travels</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Explore the World</h2>
+            <p>Find your next adventure with us!</p>
+            <a href="#services" class="btn">Explore Tours</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service">
+                <img src="services photo.jpg" alt="Location Icon">
+                <h3>Explore Amazing Places</h3>
+                <p>Discover new destinations around the globe.</p>
+            </div>
+            <div class="service">
+                <img src="flexible-schedule photo.jpg" alt="Calendar Icon">
+                <h3>Flexible Schedules</h3>
+                <p>Customize your travel plans based on your preferences.</p>
+            </div>
+            <div class="service">
+                <img src="flexible-schedule photo.jpg" alt="Support Icon">
+                <h3>24/7 Customer Support</h3>
+                <p>Assistance available round the clock during your trip.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial-slider" id="testimonial-slider">
+                <div class="testimonial">
+                    <p>"Amazing experience! Would highly recommend."</p>
+                    <cite>John Doe</cite>
+                </div>
+                <div class="testimonial">
+                    <p>"The best travel agency I've ever used."</p>
+                    <cite>Jane Smith</cite>
+                </div>
+                <!-- Add more testimonials as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Latest Blog Posts</h2>
+            <div class="post">
+                <img src="blog photo.jpg" alt="Blog Post Image">
+                <h3>Top 10 Destinations for Summer 2024</h3>
+                <p>Discover the best places to visit this summer and plan your trip today!</p>
+            </div>
+            <div class="post">
+                <img src="Essential-Travel-Items-You-Should-Pack.jpeg" alt="Blog Post Image">
+                <h3>Travel Tips: Packing Essentials</h3>
+                <p>Learn what to pack for your next adventure to ensure a stress-free travel experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2024 Tours & Travels. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Testimonial slider functionality
+        const testimonialSlider = document.getElementById('testimonial-slider');
+        let slideIndex = 0;
+
+        function showTestimonials() {
+            const testimonials = testimonialSlider.getElementsByClassName('testimonial');
+            for (let i = 0; i < testimonials.length; i++) {
+                testimonials[i].style.transform = `translateX(${(i - slideIndex) * 100}%)`;
+            }
+        }
+
+        function nextTestimonial() {
+            const testimonials = testimonialSlider.getElementsByClassName('testimonial');
+            slideIndex = (slideIndex + 1) % testimonials.length;
+            showTestimonials();
+        }
+
+        setInterval(nextTestimonial, 5000); // Auto slide every 5 seconds
+    </script>
+</body>
+</html>
